@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+Test set: smoke_Suite.ALC_4351
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 6, Errors: 0, Skipped: 8, Time elapsed: 2,287.236 s <<< FAILURE! - in smoke_Suite.ALC_4351
+smoke_Suite.ALC_4351.suspendBranch  Time elapsed: 87.588 s  <<< FAILURE!
+java.lang.AssertionError
+	at smoke_Suite.ALC_4351.suspendBranch(ALC_4351.java:73)
+
+smoke_Suite.ALC_4351.verifySuspendedAccount  Time elapsed: 63.775 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().textContains("Account Suspended")})
+	at smoke_Suite.ALC_4351.verifySuspendedAccount(ALC_4351.java:89)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1b1e54e8 (tried for 1 second(s) with 500 milliseconds interval)
+	at smoke_Suite.ALC_4351.verifySuspendedAccount(ALC_4351.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().textContains("Account Suspended")})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at smoke_Suite.ALC_4351.verifySuspendedAccount(ALC_4351.java:89)
+
+smoke_Suite.ALC_4351.signupasbranchdirectly  Time elapsed: 66.405 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Show year picker")})
+	at smoke_Suite.ALC_4351.signupasbranchdirectly(ALC_4351.java:105)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1c486bf5 (tried for 1 second(s) with 500 milliseconds interval)
+	at smoke_Suite.ALC_4351.signupasbranchdirectly(ALC_4351.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Show year picker")})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at smoke_Suite.ALC_4351.signupasbranchdirectly(ALC_4351.java:105)
+
+smoke_Suite.ALC_4351.direct_branchVerifyAndEdit  Time elapsed: 1.191 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div _ngcontent-bun-c124="" class="sidebar-item ng-star-inserted sidebar-item-selected">...</div> is not clickable at point (95, 513). Other element would receive the click: <ngb-modal-window role="dialog" tabindex="-1" aria-modal="true" class="d-block modal fade show">...</ngb-modal-window>
+  (Session info: chrome=123.0.6312.106)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b77e15913a9487356a4929de761a3582, clickElement {id=f.3E3FA02DD740A9D8E2F971571252A04C.d.74F0E68C3B983D8EE4D5DAD9E238F1C9.e.57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Fleek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51975/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b77e15913a9487356a4929de761a3582)] -> xpath: //div[@class='body']/div/div/div[text()=' Branches ']]
+Session ID: b77e15913a9487356a4929de761a3582
+	at smoke_Suite.ALC_4351.direct_branchVerifyAndEdit(ALC_4351.java:112)
+
+smoke_Suite.ALC_4351.verifyEditInAppagain  Time elapsed: 1,811.996 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for condition (visibility of Located by By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Log in").instance(1)})) to be refreshed (tried for 300 second(s) with 500 milliseconds interval)
+	at smoke_Suite.ALC_4351.verifyEditInAppagain(ALC_4351.java:119)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Log in").instance(1)})
+	at smoke_Suite.ALC_4351.verifyEditInAppagain(ALC_4351.java:119)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@44607320 (tried for 1 second(s) with 500 milliseconds interval)
+	at smoke_Suite.ALC_4351.verifyEditInAppagain(ALC_4351.java:119)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Log in").instance(1)})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at smoke_Suite.ALC_4351.verifyEditInAppagain(ALC_4351.java:119)
+
+smoke_Suite.ALC_4351.afterMethod[[TestResult name=verifyEditInAppagain status=FAILURE method=ALC_4351.verifyEditInAppagain()[pri:8, instance:smoke_Suite.ALC_4351@6f01b95f] output={null}]](0)  Time elapsed: 1,812.199 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=123.0.6312.106)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b77e15913a9487356a4929de761a3582, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Fleek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51975/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b77e15913a9487356a4929de761a3582
+

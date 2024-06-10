@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-05T19:35:20 IST" name="Default suite" finished-at="2024-06-05T19:40:18 IST" duration-ms="297536">
+    <groups>
+    </groups>
+    <test started-at="2024-06-05T19:35:20 IST" name="Default test" finished-at="2024-06-05T19:40:18 IST" duration-ms="297536">
+      <class name="smoke_Suite.ALC_4361">
+        <test-method is-config="true" signature="generateAndroidBenefitname()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateAndroidBenefitname" finished-at="2024-06-05T19:35:20 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateAndroidBenefitname -->
+        <test-method is-config="true" signature="generateBenefitName()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateBenefitName" finished-at="2024-06-05T19:35:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateBenefitName -->
+        <test-method is-config="true" signature="generateBenefitOrderName()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateBenefitOrderName" finished-at="2024-06-05T19:35:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateBenefitOrderName -->
+        <test-method is-config="true" signature="generateBonusName()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateBonusName" finished-at="2024-06-05T19:35:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateBonusName -->
+        <test-method is-config="true" signature="generateRandomBranchMemberNumber()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateRandomBranchMemberNumber" finished-at="2024-06-05T19:35:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateRandomBranchMemberNumber -->
+        <test-method is-config="true" signature="generateBranchMemberName()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateBranchMemberName" finished-at="2024-06-05T19:35:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateBranchMemberName -->
+        <test-method is-config="true" signature="generateBranchName()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateBranchName" finished-at="2024-06-05T19:35:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateBranchName -->
+        <test-method is-config="true" signature="generateRandomLastName()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateRandomLastName" finished-at="2024-06-05T19:35:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateRandomLastName -->
+        <test-method is-config="true" signature="generateRandomNumber()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="generateRandomNumber" finished-at="2024-06-05T19:35:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateRandomNumber -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:20 IST" name="setup" finished-at="2024-06-05T19:35:57 IST" duration-ms="36791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createdata()[pri:1, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:35:57 IST" name="createdata" description="Create data for testcase ALC_4361" finished-at="2024-06-05T19:36:14 IST" duration-ms="16850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createdata -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:36:14 IST" name="afterMethod" finished-at="2024-06-05T19:36:14 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createdata status=SUCCESS method=ALC_4361.createdata()[pri:1, instance:smoke_Suite.ALC_4361@5d43661b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="doTransactions()[pri:2, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:36:14 IST" name="doTransactions" description="Perform transactions between member, branch and processor" finished-at="2024-06-05T19:38:05 IST" duration-ms="110625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doTransactions -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:38:05 IST" name="afterMethod" finished-at="2024-06-05T19:38:05 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doTransactions status=SUCCESS method=ALC_4361.doTransactions()[pri:2, instance:smoke_Suite.ALC_4361@5d43661b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyNoBonusForDonations()[pri:3, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:38:05 IST" name="verifyNoBonusForDonations" description="Verify that no bonus is received for donation" finished-at="2024-06-05T19:40:15 IST" duration-ms="130802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoBonusForDonations -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:40:15 IST" name="afterMethod" finished-at="2024-06-05T19:40:15 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNoBonusForDonations status=SUCCESS method=ALC_4361.verifyNoBonusForDonations()[pri:3, instance:smoke_Suite.ALC_4361@5d43661b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="teardownalchemy()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:40:15 IST" name="teardownalchemy" finished-at="2024-06-05T19:40:16 IST" duration-ms="574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownalchemy -->
+        <test-method is-config="true" signature="teardownapp()[pri:0, instance:smoke_Suite.ALC_4361@5d43661b]" started-at="2024-06-05T19:40:16 IST" name="teardownapp" finished-at="2024-06-05T19:40:18 IST" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownapp -->
+      </class> <!-- smoke_Suite.ALC_4361 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

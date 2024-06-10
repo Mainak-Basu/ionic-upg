@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: smoke_Suite.ALC_4357
+-------------------------------------------------------------------------------
+Tests run: 32, Failures: 2, Errors: 0, Skipped: 28, Time elapsed: 383.651 s <<< FAILURE! - in smoke_Suite.ALC_4357
+smoke_Suite.ALC_4357.Branch1_Branch2_Transaction_App_Assertions  Time elapsed: 11.798 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8200
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [bcb6bef8-1481-4059-8931-9a38588e0a6e, findElement {using=-android uiautomator, value=new UiSelector().text("Log in").instance(1)}]
+Capabilities {appium:appActivity: org.plasticbank.app.MainAct..., appium:appPackage: org.plasticbank.app, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 9000, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bcb6bef8-1481-4059-8931-9a38588e0a6e
+	at smoke_Suite.ALC_4357.Branch1_Branch2_Transaction_App_Assertions(ALC_4357.java:66)
+
+smoke_Suite.ALC_4357.afterMethod[[TestResult name=Branch1_Branch2_Transaction_App_Assertions status=FAILURE method=ALC_4357.Branch1_Branch2_Transaction_App_Assertions()[pri:2, instance:smoke_Suite.ALC_4357@5965d37] output={null}]](0)  Time elapsed: 14.181 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8200
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [bcb6bef8-1481-4059-8931-9a38588e0a6e, screenshot {}]
+Capabilities {appium:appActivity: org.plasticbank.app.MainAct..., appium:appPackage: org.plasticbank.app, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 9000, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bcb6bef8-1481-4059-8931-9a38588e0a6e
+

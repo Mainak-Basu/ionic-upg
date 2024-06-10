@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="smoke_Suite.ALC_4357">
+        <methods>
+          <include name="Branch3_Processor_Transaction"/>
+          <include name="VerifyBonusOrderRecieptBranchAssertions"/>
+          <include name="teardownalchemy"/>
+          <include name="Verify_Bonus_Branch1"/>
+          <include name="Verify_Bonus_Branch3"/>
+          <include name="afterMethod"/>
+          <include name="generateRandomLastName"/>
+          <include name="Verify_Bonus_Branch2"/>
+          <include name="checkBonusTransferedInApp"/>
+          <include name="generateBenefitOrderName"/>
+          <include name="generateBranchName"/>
+          <include name="generateRandomBranchMemberNumber"/>
+          <include name="generateAndroidBenefitname"/>
+          <include name="teardownapp"/>
+          <include name="generateBenefitName"/>
+          <include name="Verify_Bonus_Processor"/>
+          <include name="setup"/>
+          <include name="generateBranchMemberName"/>
+          <include name="Branch1_Branch3_Transaction"/>
+          <include name="BonusTransferedCheck"/>
+          <include name="generateRandomNumber"/>
+          <include name="generateBonusName"/>
+          <include name="Plastic_Chain_Before_Approval"/>
+          <include name="Branch1_Branch2_Transaction_App_Assertions"/>
+          <include name="Plastic_Chain_After_Approval"/>
+          <include name="VerifyBonusOrderBranchValueAssertions"/>
+          <include name="Branch2_Processor_Transaction"/>
+        </methods>
+      </class> <!-- smoke_Suite.ALC_4357 -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

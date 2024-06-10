@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: smoke_Suite.ALC_3710
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 556.122 s <<< FAILURE! - in smoke_Suite.ALC_3710
+smoke_Suite.ALC_3710.checktokens  Time elapsed: 165.979 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Link account")})
+	at smoke_Suite.ALC_3710.checktokens(ALC_3710.java:56)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7668edd7 (tried for 1 second(s) with 500 milliseconds interval)
+	at smoke_Suite.ALC_3710.checktokens(ALC_3710.java:56)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Link account")})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at smoke_Suite.ALC_3710.checktokens(ALC_3710.java:56)
+

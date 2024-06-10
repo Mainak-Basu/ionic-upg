@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [AndroidTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestOnEmulator1(failed)">
+    <parameter name="udid" value="emulator-5554"/>
+    <classes>
+      <class name="smoke_Suite.ALC_347">
+        <methods>
+          <include name="verify_tokens_not_present_in_app"/>
+          <include name="teardownalchemy"/>
+          <include name="afterMethod"/>
+          <include name="generateRandomLastName"/>
+          <include name="generateBenefitOrderName"/>
+          <include name="generateBranchName"/>
+          <include name="generateRandomNumber"/>
+          <include name="generateRandomBranchMemberNumber"/>
+          <include name="generateAndroidBenefitname"/>
+          <include name="create_a_member_with_tokens"/>
+          <include name="teardownapp"/>
+          <include name="generateBenefitName"/>
+          <include name="reclaim_tokens_on_alchemy"/>
+          <include name="setup"/>
+          <include name="generateBranchMemberName"/>
+          <include name="verify_tokens_present_in_app"/>
+        </methods>
+      </class> <!-- smoke_Suite.ALC_347 -->
+    </classes>
+  </test> <!-- TestOnEmulator1(failed) -->
+  <test thread-count="5" parallel="tests" name="TestOnEmulator2(failed)">
+    <parameter name="udid" value="emulator-5556"/>
+    <classes>
+      <class name="smoke_Suite.ALC_348">
+        <methods>
+          <include name="teardownalchemy"/>
+          <include name="verifytokensnotinapp"/>
+          <include name="afterMethod"/>
+          <include name="generateRandomLastName"/>
+          <include name="generateBenefitOrderName"/>
+          <include name="generateBranchName"/>
+          <include name="createbranch"/>
+          <include name="generateRandomNumber"/>
+          <include name="generateRandomBranchMemberNumber"/>
+          <include name="generateAndroidBenefitname"/>
+          <include name="teardownapp"/>
+          <include name="generateBenefitName"/>
+          <include name="reclaimtokens"/>
+          <include name="sendtokenstobranch"/>
+          <include name="setup"/>
+          <include name="generateBranchMemberName"/>
+          <include name="verifytokensinapp"/>
+        </methods>
+      </class> <!-- smoke_Suite.ALC_348 -->
+    </classes>
+  </test> <!-- TestOnEmulator2(failed) -->
+</suite> <!-- Failed suite [AndroidTestSuite] -->

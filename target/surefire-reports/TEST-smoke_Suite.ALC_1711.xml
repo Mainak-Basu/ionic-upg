@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="smoke_Suite.ALC_1711" time="1,707.952" tests="18" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual\target\test-classes;C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual\target\classes;C:\Users\Fleek\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Fleek\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Fleek\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi-scratchpad\5.2.3\poi-scratchpad-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Fleek\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Fleek\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\Fleek\.m2\repository\log4j\log4j\1.2.14\log4j-1.2.14.jar;C:\Users\Fleek\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Fleek\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Fleek\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Fleek\.m2\repository\io\appium\java-client\8.6.0\java-client-8.6.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Fleek\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Fleek\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Fleek\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Fleek\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Fleek\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Fleek\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Fleek\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Fleek\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Fleek\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Fleek\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Fleek\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Fleek\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\Fleek\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\slf4j\slf4j-api\2.0.5\slf4j-api-2.0.5.jar;C:\Users\Fleek\.m2\repository\org\slf4j\slf4j-simple\2.0.6\slf4j-simple-2.0.6.jar;C:\Users\Fleek\.m2\repository\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\Users\Fleek\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Fleek\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Fleek\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-testng\2.20.1\allure-testng-2.20.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-java-commons\2.20.1\allure-java-commons-2.20.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-model\2.20.1\allure-model-2.20.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\tesseract\3.03-rc1-0.11\tesseract-3.03-rc1-0.11.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.71-0.11\leptonica-1.71-0.11.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.71-0.11\leptonica-1.71-0.11-windows-x86_64.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp\0.11\javacpp-0.11.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\tesseract\3.03-rc1-0.11\tesseract-3.03-rc1-0.11-windows-x86_64.jar;C:\Users\Fleek\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\Fleek\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\Fleek\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Fleek\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Fleek\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Fleek\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Fleek\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Fleek\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Fleek\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Fleek\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Fleek\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Fleek\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Fleek\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Fleek\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Fleek\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Fleek\.m2\repository\org\json\json\20230227\json-20230227.jar;C:\Users\Fleek\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Fleek\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\Fleek\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\Fleek\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Fleek\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Fleek\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Fleek\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Fleek\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Fleek\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Fleek\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Fleek\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\Fleek\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Fleek\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Fleek\AppData\Local\Temp\surefire1501261190180436606\surefirebooter4777957997593092482.jar C:\Users\Fleek\AppData\Local\Temp\surefire1501261190180436606 2024-06-05T11-53-33_508-jvmRun1 surefire4005303229467887113tmp surefire_09598951598210906006tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="smoke_Suite.ALC_1711"/>
+    <property name="surefire.test.class.path" value="C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual\target\test-classes;C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual\target\classes;C:\Users\Fleek\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Fleek\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Fleek\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi-scratchpad\5.2.3\poi-scratchpad-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Fleek\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Fleek\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\Fleek\.m2\repository\log4j\log4j\1.2.14\log4j-1.2.14.jar;C:\Users\Fleek\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Fleek\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Fleek\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Fleek\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Fleek\.m2\repository\io\appium\java-client\8.6.0\java-client-8.6.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Fleek\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Fleek\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Fleek\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Fleek\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Fleek\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Fleek\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Fleek\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Fleek\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Fleek\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Fleek\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Fleek\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Fleek\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Fleek\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Fleek\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\Fleek\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\Fleek\.m2\repository\org\slf4j\slf4j-api\2.0.5\slf4j-api-2.0.5.jar;C:\Users\Fleek\.m2\repository\org\slf4j\slf4j-simple\2.0.6\slf4j-simple-2.0.6.jar;C:\Users\Fleek\.m2\repository\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\Users\Fleek\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Fleek\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Fleek\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-testng\2.20.1\allure-testng-2.20.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-java-commons\2.20.1\allure-java-commons-2.20.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-model\2.20.1\allure-model-2.20.1.jar;C:\Users\Fleek\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\tesseract\3.03-rc1-0.11\tesseract-3.03-rc1-0.11.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.71-0.11\leptonica-1.71-0.11.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.71-0.11\leptonica-1.71-0.11-windows-x86_64.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp\0.11\javacpp-0.11.jar;C:\Users\Fleek\.m2\repository\org\bytedeco\javacpp-presets\tesseract\3.03-rc1-0.11\tesseract-3.03-rc1-0.11-windows-x86_64.jar;C:\Users\Fleek\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\Fleek\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\Fleek\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Fleek\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Fleek\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Fleek\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Fleek\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Fleek\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Fleek\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Fleek\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Fleek\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Fleek\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Fleek\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Fleek\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Fleek\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Fleek\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Fleek\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Fleek\.m2\repository\org\json\json\20230227\json-20230227.jar;C:\Users\Fleek\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Fleek\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\Fleek\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\Fleek\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\Fleek\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Fleek\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Fleek\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Fleek\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Fleek\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Fleek\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Fleek\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Fleek\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Fleek\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;C:\Users\Fleek\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Fleek\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Fleek"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Fleek\AppData\Local\Temp\surefire1501261190180436606\surefirebooter4777957997593092482.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
+    <property name="user.name" value="Fleek"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Fleek\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Fleek\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Fleek\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\MAVEN_HOME/bin;C:\Program Files\java\jdk-17/bin;C:\Program Files\java\jdk-17/bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-17\lib;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules;C:\Users\Fleek\AppData\Local\Android\Sdk\tools;C:\Users\Fleek\AppData\Local\Android\Sdk\buid-tools;C:\Users\Fleek\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Git\cmd;C:\Users\Fleek\Downloads\;C:\ProgramData\Jenkins\.jenkins\tools\ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation\ALLURE_COMMANDLINE\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Fleek\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Fleek\AppData\Local\Programs\Python\Python311\;C:\Users\Fleek\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3\bin;;C:\Users\Fleek\AppData\Roaming\npm;C:\Users\Fleek\AppData\Local\Android\Sdk\tools\bin;C:\Users\Fleek\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="createAndPerformTransaction" classname="smoke_Suite.ALC_1711" time="45.818">
+    <system-out><![CDATA[Android benefit Name :androidmuKps
+Benefit Name :fleekhGERR
+Benefit Order Name :mainakfleekllSLh
+Bonus Name :FleekBonusLXnOg
+Branch Member Name :Gayas ozkwK
+Branch Name :Gayas ROSTP
+Branch Member Number : +6336755412
+Member Name : Gayas LpNKn
+Member Number :+6340252079
+Microsoft Windows [Version 10.0.22631.3593]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual>newman run ALC-1711.postman_collection.json --export-environment variable_1711.json
+newman
+
+ALC-1711
+
+â–¡ Create Member Data Copy
+â”” Register Member
+  â”Œ
+  â”‚ 'Member Phone Number :', '+631772134196'
+  â””
+  POST https://upgradepb.cognitionfoundry.io/register [200 OK, 3.49kB, 3.9s]
+  âˆš  Status code is 200 (OK)
+
+â”” Login
+  POST https://upgradepb.cognitionfoundry.io/login [200 OK, 3.72kB, 623ms]
+  âˆš  Status code is 200 (OK)
+
+â–¡ Create Branch 1 Data Copy
+â”” Register Member
+  â”Œ
+  â”‚ 'Member Branch 1 Phone Number :', '+638900447311'
+  â””
+  POST https://upgradepb.cognitionfoundry.io/register [200 OK, 3.49kB, 1901ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Login
+  POST https://upgradepb.cognitionfoundry.io/login [200 OK, 3.72kB, 665ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Branch
+  â”Œ
+  â”‚ ' Branch 1 Name :', 'brancha_hivCctDb'
+  â””
+  POST https://upgradepb.cognitionfoundry.io/cp [200 OK, 83.11kB, 869ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Item [HDPE-CLEAN-CLEAR]
+  POST https://upgradepb.cognitionfoundry.io/cp/4206db4f-9ec3-4aa4-821c-0aaf4d5df0e5/item [200 OK, 1.06kB, 765ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Item [PET-RAW-TRANSPARENT]
+  POST https://upgradepb.cognitionfoundry.io/cp/4206db4f-9ec3-4aa4-821c-0aaf4d5df0e5/item [200 OK, 1.07kB, 509ms]
+  âˆš  Status code is 200 (OK)
+
+â–¡ Create Branch 2 Data Copy
+â”” Register Member
+  â”Œ
+  â”‚ 'Member Branch 2 Phone Number :', '+635905764139'
+  â””
+  POST https://upgradepb.cognitionfoundry.io/register [200 OK, 3.49kB, 1820ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Login
+  POST https://upgradepb.cognitionfoundry.io/login [200 OK, 3.72kB, 633ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Branch
+  â”Œ
+  â”‚ ' Branch 2 Name :', 'branchb_LuIdiBqh'
+  â””
+  POST https://upgradepb.cognitionfoundry.io/cp [200 OK, 83.11kB, 907ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Item [HDPE-CLEAN-CLEAR]
+  POST https://upgradepb.cognitionfoundry.io/cp/6e36f640-8f2a-4aac-bd9b-3775ca879cf0/item [200 OK, 1.06kB, 711ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Item [PET-RAW-TRANSPARENT]
+  POST https://upgradepb.cognitionfoundry.io/cp/6e36f640-8f2a-4aac-bd9b-3775ca879cf0/item [200 OK, 1.07kB, 581ms]
+  âˆš  Status code is 200 (OK)
+
+â–¡ Create Processor 1 Data Copy
+â”” Register Member
+  â”Œ
+  â”‚ 'Member Processor 1 Phone Number :', '+631736042205'
+  â””
+  POST https://upgradepb.cognitionfoundry.io/register [200 OK, 3.49kB, 1657ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Login
+  POST https://upgradepb.cognitionfoundry.io/login [200 OK, 3.72kB, 665ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create processor
+  â”Œ
+  â”‚ ' Processor 1 Name :', 'process_wXqtdEqZ'
+  â””
+  POST https://upgradepb.cognitionfoundry.io/rc [200 OK, 82.9kB, 685ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Item [HDPE-CLEAN-CLEAR]
+  POST https://upgradepb.cognitionfoundry.io/rc/8bb80c8a-958e-4352-93b9-5f6184f1abe8/item [200 OK, 1.06kB, 831ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Create Item [PET-RAW-TRANSPARENT]
+  POST https://upgradepb.cognitionfoundry.io/rc/8bb80c8a-958e-4352-93b9-5f6184f1abe8/item [200 OK, 1.06kB, 854ms]
+  âˆš  Status code is 200 (OK)
+
+â–¡ Create Data from Alchemy Copy
+â”” Login
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/login [200 OK, 644B, 526ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Two_factor_auth_login
+  POST https://upgradepb.cognitionfoundry.io/admin/two_factor_auth_login [200 OK, 18.53kB, 425ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Set Item bonus eligible for B1 Item 1
+  POST https://upgradepb.cognitionfoundry.io/admin/cp/4206db4f-9ec3-4aa4-821c-0aaf4d5df0e5/item/1abd0050-1306-4c2d-af6b-7e0a5574ffe2 [200 OK, 1.31kB, 1697ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Set Item bonus eligible for B1 item 2
+  POST https://upgradepb.cognitionfoundry.io/admin/cp/4206db4f-9ec3-4aa4-821c-0aaf4d5df0e5/item/21713b4c-c3d3-405e-b3c9-a198928dc56a [200 OK, 1.32kB, 1044ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Set Item bonus eligible for B2 Item 1
+  POST https://upgradepb.cognitionfoundry.io/admin/cp/6e36f640-8f2a-4aac-bd9b-3775ca879cf0/item/a57cd0ed-0f1f-40e1-89f4-d73cf3447274 [200 OK, 1.31kB, 1435ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Set Item bonus eligible for B2 Item 2
+  POST https://upgradepb.cognitionfoundry.io/admin/cp/6e36f640-8f2a-4aac-bd9b-3775ca879cf0/item/a154dff3-39aa-4b40-b1da-cfe5a17fa26e [200 OK, 1.32kB, 1021ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Edit Branch B1
+  POST https://upgradepb.cognitionfoundry.io/admin/cp/4206db4f-9ec3-4aa4-821c-0aaf4d5df0e5 [200 OK, 83.69kB, 606ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Edit Branch B2
+  POST https://upgradepb.cognitionfoundry.io/admin/cp/6e36f640-8f2a-4aac-bd9b-3775ca879cf0 [200 OK, 83.69kB, 251ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Edit Processor
+  POST https://upgradepb.cognitionfoundry.io/admin/rc/8bb80c8a-958e-4352-93b9-5f6184f1abe8 [200 OK, 83.14kB, 224ms]
+
+â”” two_factor_auth for bonus order
+  POST https://upgradepb.cognitionfoundry.io/admin/init_two_factor_auth [200 OK, 791B, 205ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Bonus Order Creation
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/offset [200 OK, 3.22kB, 235ms]
+  âˆš  Status code is 200 (OK)
+
+â”” two_factor_auth for bonus order Edit
+  POST https://upgradepb.cognitionfoundry.io/admin/init_two_factor_auth [200 OK, 791B, 216ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Add Processor in Bonus Order
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/offset/9ca35d6a-d201-47af-a3c3-aeb39e084d36/addParticipants [200 OK, 3.63kB, 226ms]
+  âˆš  Status code is 200 (OK)
+
+â–¡ Create Transactions Copy
+â”” Buy Transaction M>B1
+  POST https://upgradepb.cognitionfoundry.io/pl/transaction [200 OK, 3.02kB, 1647ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Buy Transaction B1>B2
+  POST https://upgradepb.cognitionfoundry.io/pl/transaction [200 OK, 2.92kB, 1904ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Buy Transaction B2>P1
+  POST https://upgradepb.cognitionfoundry.io/pl/transaction [200 OK, 2.92kB, 2s]
+  âˆš  Status code is 200 (OK)
+
+â–¡ Approve transaction from Branch Copy
+â”” Approve Transaction T1
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/transaction/7361fa3a-1f1c-4e45-a553-f2b0534da3bb/approve [200 OK, 1.08kB, 279ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Approve Transaction T2
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/transaction/80445b4c-559a-4b97-8671-c3cc5bded6b3/approve [200 OK, 1.08kB, 261ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Approve Transaction T3
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/transaction/6c574f87-2060-4a70-b91a-9338e50f44d8/approve [200 OK, 1.08kB, 276ms]
+  âˆš  Status code is 200 (OK)
+
+â–¡ Receipt Approval Transaction Copy
+â”” Receipt T1
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/offset/transaction_images/status [200 OK, 717B, 196ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Receipt T2
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/offset/transaction_images/status [200 OK, 717B, 198ms]
+  âˆš  Status code is 200 (OK)
+
+â”” Receipt T3
+  POST https://upgradepb.cognitionfoundry.io/pl/admin/offset/transaction_images/status [200 OK, 717B, 195ms]
+  âˆš  Status code is 200 (OK)
+
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”�
+â”‚                         â”‚           executed â”‚             failed â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚              iterations â”‚                  1 â”‚                  0 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                requests â”‚                 39 â”‚                  0 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚            test-scripts â”‚                 77 â”‚                  0 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚      prerequest-scripts â”‚                 51 â”‚                  0 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚              assertions â”‚                 38 â”‚                  0 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ total run duration: 38.1s                                         â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ total data received: 559.91kB (approx)                            â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ average response time: 865ms [min: 195ms, max: 3.9s, s.d.: 749ms] â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+C:\Users\Fleek\Downloads\PlasticBank\com.plasticbank_new.actual>
+Process completed with exit code: 0
+m1randomUsername: FleekDKXTxK
+m1randomNumber: +631772134196
+m1id: ca536dd1-d87e-48ff-9646-2305886cbf1e
+b1randomNumber: +638900447311
+b1randomBranchName: brancha_hivCctDb
+b1branchid: 4206db4f-9ec3-4aa4-821c-0aaf4d5df0e5
+b2randomNumber: +635905764139
+b2randomBranchName: branchb_LuIdiBqh
+b2branchid: 6e36f640-8f2a-4aac-bd9b-3775ca879cf0
+p1randomNumber: +631736042205
+p1randomProcessorName: process_wXqtdEqZ
+p1processorid: 8bb80c8a-958e-4352-93b9-5f6184f1abe8
+bonusOrderName: FleekruwMde
+bonusOrderId: 9ca35d6a-d201-47af-a3c3-aeb39e084d36
+]]></system-out>
+    <system-err><![CDATA[Jun 05, 2024 11:53:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 125
+Jun 05, 2024 11:53:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 125.0.6422.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="kgRecycledAndBonusInBranchExcHistoryBeforeVoid" classname="smoke_Suite.ALC_1711" time="169.8">
+    <system-out><![CDATA[19
+0
+]]></system-out>
+  </testcase>
+  <testcase name="dashBoardVerificationsBeforeVoid" classname="smoke_Suite.ALC_1711" time="47.125">
+    <system-out><![CDATA[!!!!127160331
+!!!!27582159
+Kg By Country before void: 127160331
+Kg By Philippines before void: 27582159
+]]></system-out>
+  </testcase>
+  <testcase name="bonusOrderExcHisVerificationBeforeVoid" classname="smoke_Suite.ALC_1711" time="54.301"/>
+  <testcase name="ExcHisBonusVerificationBeforeVoid" classname="smoke_Suite.ALC_1711" time="192.677">
+    <system-out><![CDATA[-----19-----
+Bonus is present
+Bonus is present
+Bonus is present
+Bonus is present
+]]></system-out>
+  </testcase>
+  <testcase name="approveBonus" classname="smoke_Suite.ALC_1711" time="32.296">
+    <failure message="element click intercepted: Element &lt;a _ngcontent-hlg-c272=&quot;&quot; href=&quot;&quot; ngbnavlink=&quot;&quot; class=&quot;pointer-events-none nav-link&quot; id=&quot;ngb-nav-26&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-disabled=&quot;false&quot;&gt;...&lt;/a&gt; is not clickable at point (522, 148). Other element would receive the click: &lt;li _ngcontent-hlg-c272=&quot;&quot; class=&quot;nav-item&quot;&gt;...&lt;/li&gt;&#10;  (Session info: chrome=125.0.6422.142)&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [80573d8dbdf1f14ace541d8a8125823b, clickElement {id=f.D7F1700A5191A2DBAC70F88EC9666A3F.d.CF58F23961D70864C8A7F5CB6DFBD1B8.e.2190}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Fleek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50418/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (80573d8dbdf1f14ace541d8a8125823b)] -&gt; xpath: //li/a[contains(text(),&quot;Buy Transactions&quot;)]]&#10;Session ID: 80573d8dbdf1f14ace541d8a8125823b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a _ngcontent-hlg-c272="" href="" ngbnavlink="" class="pointer-events-none nav-link" id="ngb-nav-26" role="tab" aria-selected="false" aria-disabled="false">...</a> is not clickable at point (522, 148). Other element would receive the click: <li _ngcontent-hlg-c272="" class="nav-item">...</li>
+  (Session info: chrome=125.0.6422.142)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [80573d8dbdf1f14ace541d8a8125823b, clickElement {id=f.D7F1700A5191A2DBAC70F88EC9666A3F.d.CF58F23961D70864C8A7F5CB6DFBD1B8.e.2190}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Fleek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50418/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (80573d8dbdf1f14ace541d8a8125823b)] -> xpath: //li/a[contains(text(),"Buy Transactions")]]
+Session ID: 80573d8dbdf1f14ace541d8a8125823b
+	at smoke_Suite.ALC_1711.approveBonus(ALC_1711.java:94)
+]]></failure>
+  </testcase>
+  <testcase name="verifyBonusInAlchmeyAfterBonusPaid" classname="smoke_Suite.ALC_1711" time="103.803">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at smoke_Suite.ALC_1711.verifyBonusInAlchmeyAfterBonusPaid(ALC_1711.java:106)
+]]></failure>
+    <system-out><![CDATA[30
+0
+]]></system-out>
+  </testcase>
+  <testcase name="verifyBonusInAppAfterBonusPaid" classname="smoke_Suite.ALC_1711" time="133.942"/>
+  <testcase name="voidTransaction" classname="smoke_Suite.ALC_1711" time="13.063"/>
+  <testcase name="kgRecycledInBranchAfterVoid" classname="smoke_Suite.ALC_1711" time="217.587">
+    <system-out><![CDATA[0
+0
+Bonus is Not present
+Bonus is Not present
+Bonus is Not present
+Bonus is Not present
+]]></system-out>
+  </testcase>
+  <testcase name="dashBoardVerificationsAfterVoid" classname="smoke_Suite.ALC_1711" time="79.7">
+    <system-out><![CDATA[!!!!127160312
+!!!!27582140
+Kg By Country before void: 127160331
+Kg By Philippines before void: 27582159
+Kg By Country after void: 127160312
+Kg By Philippines after void: 27582140
+Total Kg transaction Country Wise19
+Total Kg transaction in phillipenes19
+]]></system-out>
+  </testcase>
+  <testcase name="bonusOrderExcHisVerificationAfterVoid" classname="smoke_Suite.ALC_1711" time="43.821">
+    <system-out><![CDATA[No Bonus Found
+]]></system-out>
+  </testcase>
+  <testcase name="bonusProgressInSummaryTabAfterVoid" classname="smoke_Suite.ALC_1711" time="90.259">
+    <system-out><![CDATA[0 KG /50,000KG
+]]></system-out>
+  </testcase>
+  <testcase name="reclaimToken" classname="smoke_Suite.ALC_1711" time="15.778"/>
+  <testcase name="verifyBonusInAppAfterReclaimToken" classname="smoke_Suite.ALC_1711" time="134.393"/>
+  <testcase name="verifyBonusInAlchmeyAfterReclaimToken" classname="smoke_Suite.ALC_1711" time="84.141">
+    <system-out><![CDATA[0
+0
+]]></system-out>
+  </testcase>
+  <testcase name="bonusExchangeHistoryTransaction" classname="smoke_Suite.ALC_1711" time="13.925">
+    <system-out><![CDATA[No Bonus Found
+]]></system-out>
+  </testcase>
+  <testcase name="branchExchangeHistoryBonus" classname="smoke_Suite.ALC_1711" time="149.122">
+    <system-out><![CDATA[Bonus is Not Present
+Bonus is Not Present
+Bonus is Not Present
+Bonus is Not Present
+No Bonus is Present
+]]></system-out>
+  </testcase>
+</testsuite>

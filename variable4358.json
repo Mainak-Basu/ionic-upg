@@ -1,0 +1,94 @@
+{
+  "id": "264d0276-c0a3-4902-aeb8-228784d0a60f",
+  "values": [
+    {
+      "type": "any",
+      "value": "FleekSNUrcW",
+      "key": "b1randomUsername"
+    },
+    {
+      "type": "any",
+      "value": "+633218701948",
+      "key": "b1randomNumber"
+    },
+    {
+      "type": "any",
+      "value": "60C8A0CF-0849-C33E-A017-0F92AAF8EC59",
+      "key": "b1deviceID"
+    },
+    {
+      "type": "any",
+      "value": "ca042de2-80b3-48b8-bd22-c9eb591da970",
+      "key": "b1id"
+    },
+    {
+      "type": "any",
+      "value": "ca042de2-80b3-48b8-bd22-c9eb591da970",
+      "key": "b1entityId"
+    },
+    {
+      "type": "any",
+      "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDkwOTYwMDQsInN1YiI6ImNhMDQyZGUyLTgwYjMtNDhiOC1iZDIyLWM5ZWI1OTFkYTk3MCJ9.7FdQpDh6Ca0R_H8AZc3YNBX4z1NvZ1BTDEF8xpHG0QWHTlz4SXNfhYlggp4huCOwCCbLhlGRHXNL_1WfQOlZTw",
+      "key": "b1accessToken"
+    },
+    {
+      "type": "any",
+      "value": "brancha_SeofXsym",
+      "key": "b1randomBranchName"
+    },
+    {
+      "type": "any",
+      "value": "a413466f-c401-48b1-acf0-04cd8230ebed",
+      "key": "b1branchid"
+    },
+    {
+      "type": "any",
+      "value": "07ba15e9-ddf5-4ffe-85bd-a386a86970c3",
+      "key": "b1item1Id"
+    },
+    {
+      "type": "any",
+      "value": "FleekhcOppG",
+      "key": "p1randomUsername"
+    },
+    {
+      "type": "any",
+      "value": "+636777333447",
+      "key": "p1randomNumber"
+    },
+    {
+      "type": "any",
+      "value": "A9D918B0-FE14-C5EE-6465-802FFF05F9CC",
+      "key": "p1deviceID"
+    },
+    {
+      "type": "any",
+      "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDkwOTYwMTEsInN1YiI6ImRiNWMwN2Y4LTE2ODQtNGMzMy04ZGMyLTczNTNiNWQ5YzRlMyJ9.MZt1biauafwBfiJVye12JiYjOJSMXyztWY9AkijBs42pT_pR4zkrEFOgKa6jJxvq9UKPR4UvbglSX--9r6zFhw",
+      "key": "p1accessToken"
+    },
+    {
+      "type": "any",
+      "value": "db5c07f8-1684-4c33-8dc2-7353b5d9c4e3",
+      "key": "p1userId"
+    },
+    {
+      "type": "any",
+      "value": "process_2N9ilok5",
+      "key": "p1randomProcessorName"
+    },
+    {
+      "type": "any",
+      "value": "8b04843b-d011-40a5-8199-03cbb215d1d9",
+      "key": "p1processorid"
+    },
+    {
+      "type": "any",
+      "value": "827fe642-4925-42d6-9b89-d573fc9992cf",
+      "key": "p1item1Id"
+    }
+  ],
+  "name": "environment",
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2024-06-05T14:00:15.126Z",
+  "_postman_exported_using": "Newman/5.3.2"
+}

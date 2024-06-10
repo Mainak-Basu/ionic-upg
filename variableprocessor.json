@@ -1,0 +1,44 @@
+{
+  "id": "8ad7a59b-1c44-4d58-826e-4a7f9e79c7d3",
+  "values": [
+    {
+      "type": "any",
+      "value": "Fleek5ksl1L",
+      "key": "p1randomUsername"
+    },
+    {
+      "type": "any",
+      "value": "+635074158987",
+      "key": "p1randomNumber"
+    },
+    {
+      "type": "any",
+      "value": "4DC57A85-A36C-3BC6-820E-9D7CD6CC9CF7",
+      "key": "p1deviceID"
+    },
+    {
+      "type": "any",
+      "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDkwOTM4OTgsInN1YiI6ImY1ZWU0ZjYzLTM0MjQtNDEzYi05OWQ1LTUyNjM3NWMxYjZhMSJ9.YHCQKVi4D3A5EwA9WW98LTE8m_jdH0uu5NgE7bkJfWvekM3HnsrwTU4xw-bFq2G1HAKECaaj82rBzecqbYSfNg",
+      "key": "p1accessToken"
+    },
+    {
+      "type": "any",
+      "value": "f5ee4f63-3424-413b-99d5-526375c1b6a1",
+      "key": "p1userId"
+    },
+    {
+      "type": "any",
+      "value": "process_6kcftsgV",
+      "key": "p1randomProcessorName"
+    },
+    {
+      "type": "any",
+      "value": "87df3744-4905-48f7-a4d8-bef28a04c840",
+      "key": "p1processorid"
+    }
+  ],
+  "name": "environment",
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2024-06-05T13:25:00.161Z",
+  "_postman_exported_using": "Newman/5.3.2"
+}

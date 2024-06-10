@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="smoke_Suite.ALC_347"/>
+      <class name="smoke_Suite.ALC_348"/>
+      <class name="smoke_Suite.ALC_349"/>
+      <class name="smoke_Suite.ALC_4351"/>
+      <class name="smoke_Suite.ALC_4362"/>
+      <class name="smoke_Suite.ALC_4352"/>
+      <class name="smoke_Suite.ALC_4363"/>
+      <class name="smoke_Suite.ALC_380"/>
+      <class name="smoke_Suite.ALC_4360"/>
+      <class name="smoke_Suite.ALC_4350"/>
+      <class name="smoke_Suite.ALC_4361"/>
+      <class name="smoke_Suite.ALC_4366"/>
+      <class name="smoke_Suite.ALC_4871"/>
+      <class name="smoke_Suite.ALC_4365"/>
+      <class name="smoke_Suite.ALC_4354"/>
+      <class name="smoke_Suite.ALC_4359"/>
+      <class name="smoke_Suite.ALC_4995"/>
+      <class name="smoke_Suite.ALC_4357"/>
+      <class name="smoke_Suite.ALC_3710"/>
+      <class name="smoke_Suite.ALC_4864"/>
+      <class name="smoke_Suite.ALC_1711"/>
+      <class name="smoke_Suite.ALC_4957"/>
+      <class name="smoke_Suite.ALC_3609"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

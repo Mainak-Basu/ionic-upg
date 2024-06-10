@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: smoke_Suite.ALC_1711
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1,707.952 s <<< FAILURE! - in smoke_Suite.ALC_1711
+smoke_Suite.ALC_1711.approveBonus  Time elapsed: 32.296 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a _ngcontent-hlg-c272="" href="" ngbnavlink="" class="pointer-events-none nav-link" id="ngb-nav-26" role="tab" aria-selected="false" aria-disabled="false">...</a> is not clickable at point (522, 148). Other element would receive the click: <li _ngcontent-hlg-c272="" class="nav-item">...</li>
+  (Session info: chrome=125.0.6422.142)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [80573d8dbdf1f14ace541d8a8125823b, clickElement {id=f.D7F1700A5191A2DBAC70F88EC9666A3F.d.CF58F23961D70864C8A7F5CB6DFBD1B8.e.2190}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Fleek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50418/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (80573d8dbdf1f14ace541d8a8125823b)] -> xpath: //li/a[contains(text(),"Buy Transactions")]]
+Session ID: 80573d8dbdf1f14ace541d8a8125823b
+	at smoke_Suite.ALC_1711.approveBonus(ALC_1711.java:94)
+
+smoke_Suite.ALC_1711.verifyBonusInAlchmeyAfterBonusPaid  Time elapsed: 103.803 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at smoke_Suite.ALC_1711.verifyBonusInAlchmeyAfterBonusPaid(ALC_1711.java:106)
+
