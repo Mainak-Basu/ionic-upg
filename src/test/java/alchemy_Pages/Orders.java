@@ -339,7 +339,7 @@ public class Orders extends BaseClass{
         alcDriver.get("https://"+temp+"/#/admin/ordersoffsets/offset/"+Data.bonusOrderId1711);
         alcDriver.navigate().refresh();
         try {
-            Thread.sleep(6000);
+            Thread.sleep(15000);
             String bonusProgressActual = summary_bonusProgressText.getText();
             System.out.println(bonusProgressActual);
             assertTrue(bonusProgressActual.contains(bonusProgress));

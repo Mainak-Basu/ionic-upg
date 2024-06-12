@@ -142,7 +142,7 @@ public static boolean gojekyn;
 	public String adminpassword;
 	public String branchName;
 	
-	public static String temp= "upgrade-admin.cognitionfoundry.io";
+	public static String temp= "staging-admin.plasticbank.com";
 	public static String actual = "qa-admin.cognitionfoundry.io";
 
 	@Parameters({"udid"})
@@ -159,7 +159,7 @@ public static boolean gojekyn;
 		  wait300 = new WebDriverWait(alcDriver,Duration.ofSeconds(300)); 
 		  wait2s = new WebDriverWait(alcDriver,Duration.ofSeconds(2)); 
 		  waitms = new WebDriverWait(alcDriver,Duration.ofMillis(100));
-		  alcDriver.get("https://upgrade-admin.cognitionfoundry.io/#/login");
+		  alcDriver.get("https://staging-admin.plasticbank.com/#/login");
 		  
 		 
 		

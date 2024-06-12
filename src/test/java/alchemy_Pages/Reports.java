@@ -61,6 +61,7 @@ public void transactionStatusInAlchemyReports() throws InterruptedException {
 public void transactionStatusInAlchemyReportsforgcash() throws InterruptedException {
 	
 	reports_TAB.click();
+	Thread.sleep(10000);	
 	dropdown.click();
 	dcooption.click();
 	fromdate.click();
@@ -73,6 +74,7 @@ public void transactionStatusInAlchemyReportsforgcash() throws InterruptedExcept
 	else {
 		editedday=day;
 	}
+	Thread.sleep(10000);	
 	String newxpath=dynamicDateXpath.replace("param", editedday);
 	alcDriver.findElement(By.xpath(newxpath)).click();
 	alcDriver.findElement(By.xpath(newxpath)).click();

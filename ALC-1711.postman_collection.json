@@ -3980,12 +3980,12 @@
 	"variable": [
 		{
 			"key": "BaseUrl",
-			"value": "https://upgradepb.cognitionfoundry.io",
+			"value": "https://stagingpb.cognitionfoundry.io",
 			"type": "string"
 		},
 		{
 			"key": "HostName",
-			"value": "upgradepb.cognitionfoundry.io",
+			"value": "stagingpb.cognitionfoundry.io",
 			"type": "string"
 		}
 	]

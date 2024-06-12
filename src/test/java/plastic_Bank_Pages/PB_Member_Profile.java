@@ -453,6 +453,7 @@ public void unlink() throws InterruptedException {
 public void unlinkgcash4871() throws InterruptedException {
 	profile.click();
 	cbbtnbranch.click();
+	scroll(500,350, 500,1124);
 	unlink.click();
 	tap(500,2007);
 	Thread.sleep(1000);
