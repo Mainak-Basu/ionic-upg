@@ -141,7 +141,7 @@ public void createbenefitonphonebrowser() throws InterruptedException {
 	}
 	pbDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	searchurlfirst.click();
-	searchurlsecond.sendKeys("https://qa-admin.cognitionfoundry.io/#/login");
+	searchurlsecond.sendKeys("https://staging-admin.plasticbank.com/#/login");
 	pbDriver.pressKey(new KeyEvent(AndroidKey.ENTER));
 	wait200.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(login)));
 	

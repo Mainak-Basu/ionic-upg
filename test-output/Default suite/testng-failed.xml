@@ -3,9 +3,8 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="smoke_Suite.ALC_4871_new">
+      <class name="smoke_Suite.ALC_4361">
         <methods>
-          <include name="checktokens"/>
           <include name="teardownalchemy"/>
           <include name="afterMethod"/>
           <include name="generateRandomLastName"/>
@@ -13,6 +12,7 @@
           <include name="generateBranchName"/>
           <include name="generateRandomBranchMemberNumber"/>
           <include name="generateRandomNumber"/>
+          <include name="verifyNoBonusForDonations"/>
           <include name="generateBonusName"/>
           <include name="generateAndroidBenefitname"/>
           <include name="teardownapp"/>
@@ -20,7 +20,7 @@
           <include name="setup"/>
           <include name="generateBranchMemberName"/>
         </methods>
-      </class> <!-- smoke_Suite.ALC_4871_new -->
+      </class> <!-- smoke_Suite.ALC_4361 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
