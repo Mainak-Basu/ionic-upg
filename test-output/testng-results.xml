@@ -2,51 +2,51 @@
 <testng-results ignored="0" total="7" passed="0" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-14T17:46:36 IST" name="Default suite" finished-at="2024-06-14T17:46:56 IST" duration-ms="19853">
+  <suite started-at="2024-06-14T18:39:45 IST" name="Default suite" finished-at="2024-06-14T18:40:16 IST" duration-ms="31449">
     <groups>
     </groups>
-    <test started-at="2024-06-14T17:46:36 IST" name="Default test" finished-at="2024-06-14T17:46:56 IST" duration-ms="19853">
+    <test started-at="2024-06-14T18:39:45 IST" name="Default test" finished-at="2024-06-14T18:40:16 IST" duration-ms="31449">
       <class name="smoke_Suite.ALC_4360">
-        <test-method is-config="true" signature="generateAndroidBenefitname()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateAndroidBenefitname" finished-at="2024-06-14T17:46:36 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="generateAndroidBenefitname()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateAndroidBenefitname" finished-at="2024-06-14T18:39:45 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateAndroidBenefitname -->
-        <test-method is-config="true" signature="generateBenefitName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateBenefitName" finished-at="2024-06-14T17:46:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateBenefitName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateBenefitName" finished-at="2024-06-14T18:39:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateBenefitName -->
-        <test-method is-config="true" signature="generateBenefitOrderName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateBenefitOrderName" finished-at="2024-06-14T17:46:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="generateBenefitOrderName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateBenefitOrderName" finished-at="2024-06-14T18:39:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateBenefitOrderName -->
-        <test-method is-config="true" signature="generateBonusName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateBonusName" finished-at="2024-06-14T17:46:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="generateBonusName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateBonusName" finished-at="2024-06-14T18:39:45 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateBonusName -->
-        <test-method is-config="true" signature="generateBranchMemberName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateBranchMemberName" finished-at="2024-06-14T17:46:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateBranchMemberName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateBranchMemberName" finished-at="2024-06-14T18:39:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateBranchMemberName -->
-        <test-method is-config="true" signature="generateBranchName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateBranchName" finished-at="2024-06-14T17:46:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateBranchName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateBranchName" finished-at="2024-06-14T18:39:45 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateBranchName -->
-        <test-method is-config="true" signature="generateRandomBranchMemberNumber()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateRandomBranchMemberNumber" finished-at="2024-06-14T17:46:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateRandomBranchMemberNumber()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateRandomBranchMemberNumber" finished-at="2024-06-14T18:39:45 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateRandomBranchMemberNumber -->
-        <test-method is-config="true" signature="generateRandomLastName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateRandomLastName" finished-at="2024-06-14T17:46:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateRandomLastName()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateRandomLastName" finished-at="2024-06-14T18:39:45 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateRandomLastName -->
-        <test-method is-config="true" signature="generateRandomNumber()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="generateRandomNumber" finished-at="2024-06-14T17:46:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateRandomNumber()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="generateRandomNumber" finished-at="2024-06-14T18:39:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateRandomNumber -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:36 IST" name="setup" finished-at="2024-06-14T17:46:56 IST" duration-ms="19604" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:39:45 IST" name="setup" finished-at="2024-06-14T18:40:16 IST" duration-ms="30931" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -55,7 +55,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -110,10 +110,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="makeTransaction()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="makeTransaction" description="Transaction between member&gt;branch1&gt;branch2&gt;processor with Bonus" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method signature="makeTransaction()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="makeTransaction" description="Transaction between member&gt;branch1&gt;branch2&gt;processor with Bonus" finished-at="2024-06-14T18:40:16 IST" duration-ms="1" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -122,7 +122,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -177,14 +177,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeTransaction -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="afterMethod" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="afterMethod" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyKgRecycledAndDelayedBonus()[pri:1, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="verifyKgRecycledAndDelayedBonus" description="verify Kg recycled and Delayed Bonus in Branch1 and Branch2 " finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyKgRecycledAndDelayedBonus()[pri:1, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="verifyKgRecycledAndDelayedBonus" description="verify Kg recycled and Delayed Bonus in Branch1 and Branch2 " finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -193,7 +193,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -248,14 +248,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyKgRecycledAndDelayedBonus -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="afterMethod" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="afterMethod" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyDelayedBonusInApp()[pri:2, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="verifyDelayedBonusInApp" description="verify delayed bonus is appearing in APP for member and branch 1 and branch 2 based on the transaction" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyDelayedBonusInApp()[pri:2, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="verifyDelayedBonusInApp" description="verify delayed bonus is appearing in APP for member and branch 1 and branch 2 based on the transaction" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -264,7 +264,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -319,14 +319,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDelayedBonusInApp -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="afterMethod" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="afterMethod" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyBuySellTransactionInBonusOrder()[pri:3, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="verifyBuySellTransactionInBonusOrder" description="Bonus BUY AND SELL transactions are appearing in the Bonus order approval screen" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyBuySellTransactionInBonusOrder()[pri:3, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="verifyBuySellTransactionInBonusOrder" description="Bonus BUY AND SELL transactions are appearing in the Bonus order approval screen" finished-at="2024-06-14T18:40:16 IST" duration-ms="1" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -335,7 +335,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -390,14 +390,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBuySellTransactionInBonusOrder -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="afterMethod" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="afterMethod" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="disablebonusAndVerifyExchangeHistory()[pri:4, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="disablebonusAndVerifyExchangeHistory" description="Bonus is disabled and associated bonus is dissapering in Branch1 and Branch2 Exchange History" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method signature="disablebonusAndVerifyExchangeHistory()[pri:4, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="disablebonusAndVerifyExchangeHistory" description="Bonus is disabled and associated bonus is dissapering in Branch1 and Branch2 Exchange History" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -406,7 +406,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -461,14 +461,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disablebonusAndVerifyExchangeHistory -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="afterMethod" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="afterMethod" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyBuySellRemovedBonusInBonusOrderSummary()[pri:5, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="verifyBuySellRemovedBonusInBonusOrderSummary" description="verify Buy Sell Transaction removed from BonusOrder Approval Screen |Verify after disabling, Bonus progress value in the Bonus order Summary screen is showing zero as value with 0% fulfilled status " finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyBuySellRemovedBonusInBonusOrderSummary()[pri:5, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="verifyBuySellRemovedBonusInBonusOrderSummary" description="verify Buy Sell Transaction removed from BonusOrder Approval Screen |Verify after disabling, Bonus progress value in the Bonus order Summary screen is showing zero as value with 0% fulfilled status " finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -477,7 +477,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -532,14 +532,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBuySellRemovedBonusInBonusOrderSummary -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="afterMethod" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="afterMethod" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="delayedBonusRemovedInApp()[pri:6, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="delayedBonusRemovedInApp" description="Delayed Bonus Is removed in App for Member and Branch1 and Branch2 profile screen" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method signature="delayedBonusRemovedInApp()[pri:6, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="delayedBonusRemovedInApp" description="Delayed Bonus Is removed in App for Member and Branch1 and Branch2 profile screen" finished-at="2024-06-14T18:40:16 IST" duration-ms="1" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -548,7 +548,7 @@ Command: [null, newSession {capabilities=[{appium:appActivity=org.plasticbank.ap
 Capabilities {appActivity: org.plasticbank.app.MainAct..., appPackage: org.plasticbank.app, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 9000, platformName: ANDROID, platformVersion: 11.0}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 88a4e024-cdcf-4293-8adf-fae9df5aed1f is not known 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 7127eb07-7211-41d8-bd58-ebe54b507a27 is not known 
 Host info: host: 'DESKTOP-73VT5SL', ip: '192.168.1.15'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
@@ -603,15 +603,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delayedBonusRemovedInApp -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="afterMethod" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="afterMethod" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardownalchemy()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="teardownalchemy" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardownalchemy()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="teardownalchemy" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownalchemy -->
-        <test-method is-config="true" signature="teardownapp()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T17:46:56 IST" name="teardownapp" finished-at="2024-06-14T17:46:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardownapp()[pri:0, instance:smoke_Suite.ALC_4360@7f8a9499]" started-at="2024-06-14T18:40:16 IST" name="teardownapp" finished-at="2024-06-14T18:40:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownapp -->

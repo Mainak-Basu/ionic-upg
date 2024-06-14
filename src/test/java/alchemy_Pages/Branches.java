@@ -1236,8 +1236,6 @@ public void verifyDelayedBonus() throws InterruptedException {
 			    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
 			    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
 				Thread.sleep(2000);
-				cardheaders.get(0).click();
-
 			System.out.println("pass 2");
 		}
 		

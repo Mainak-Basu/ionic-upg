@@ -762,7 +762,7 @@ public class Orders extends BaseClass{
   WebDriverWait wait = new WebDriverWait(alcDriver,Duration.ofSeconds(20));
     
   public void buySellPresent() throws InterruptedException, IOException {
-  	alcDriver.get("https://"+BaseClass.actual+"/#/admin/ordersoffsets/offset/"+Data.bonusid4360);
+  	alcDriver.get("https://"+BaseClass.temp+"/#/admin/ordersoffsets/offset/"+Data.bonusid4360);
   	exchangehistory.click();
   	pccardheader.isDisplayed();
   	Actions action = new Actions(alcDriver);
@@ -854,7 +854,7 @@ public class Orders extends BaseClass{
     
     @SuppressWarnings("deprecation")
 	public void verifyBonusOrderSummaryAndApprovalSteps() throws InterruptedException {
-    	alcDriver.get("https://"+BaseClass.actual+"/#/admin/ordersoffsets/offset/"+Data.bonusid4360);
+    	alcDriver.get("https://"+BaseClass.temp+"/#/admin/ordersoffsets/offset/"+Data.bonusid4360);
     	bonusApproval.click();
     	Thread.sleep(2000);
 		expander.get(0).click();
@@ -893,7 +893,7 @@ public class Orders extends BaseClass{
     
     public String bonusHisExcHisVerification(String bonusName ) throws InterruptedException {
     	
-    	alcDriver.get("https://"+actual+"/#/admin/ordersoffsets/offset/"+Data.bonusOrderId1711);
+    	alcDriver.get("https://"+temp+"/#/admin/ordersoffsets/offset/"+Data.bonusOrderId1711);
     	Actions action = new Actions(alcDriver);
     	action.moveToElement(bonusExcHisBonus).build().perform();
     	String bonus= bonusExcHisBonusText.getText();
@@ -904,7 +904,7 @@ public class Orders extends BaseClass{
    
     public void buySellVerificationBeforeVoid() throws InterruptedException {
     	
-    	alcDriver.get("https://"+actual+"/#/admin/ordersoffsets/offset/"+Data.bonusOrderId1711);
+    	alcDriver.get("https://"+temp+"/#/admin/ordersoffsets/offset/"+Data.bonusOrderId1711);
     	exchangehistory.click();
     	pccardheader.isDisplayed();
     	Actions action = new Actions(alcDriver);
