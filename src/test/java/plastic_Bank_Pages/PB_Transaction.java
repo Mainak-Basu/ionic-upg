@@ -43,10 +43,11 @@ public WebElement enter;
 public WebElement searchResult;
 @AndroidFindBy(uiAutomator="new UiSelector().text(\"checkmark\")")
 public List<WebElement> checkmark;
-@AndroidFindBy(uiAutomator="new UiSelector().text(\"History\")")
-public WebElement history;
+
 @AndroidFindBy(uiAutomator="new UiSelector().text(\"Find a buyer\")")
 public WebElement findabuyer;
+@AndroidFindBy(uiAutomator="new UiSelector().text(\"No bonus\")")
+public WebElement nobonusinhistory;
 @AndroidFindBy(uiAutomator="new UiSelector().text(\"menu\")")
 public WebElement menu;
 @AndroidFindBy(uiAutomator="new UiSelector().text(\"Bought Materials\")")
@@ -103,6 +104,8 @@ public WebElement exchangeHistory;
 public List<WebElement>rewards;
 @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Allow\")")
 public WebElement allow;
+@AndroidFindBy(uiAutomator = "new UiSelector().text(\"History\")")
+public WebElement history;
 @AndroidFindBy(uiAutomator = "new UiSelector().text(\"arrow back\")")
 public WebElement arrowBack;
 @AndroidFindBy(uiAutomator = "new UiSelector().text(\"All time\")")
@@ -188,8 +191,14 @@ public WebElement branchToken_new;
     public WebElement lock_bonus;
     @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"Unlock Bonus\")")
     public WebElement unlock_bonus;
-    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"Delayed Bonus\")")
+    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"+133 (pending)\")")
     public WebElement delayed_bonus;
+    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"+133 (pending)\")")
+    public WebElement delayed_bonusm1;
+    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"+30 (pending)\")")
+    public WebElement delayed_bonusb1;
+    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"+14 (pending)\")")
+    public WebElement delayed_bonusb2;
     @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"pb-logo-bonus\")")
     public WebElement pb_logo_bonus;
     @AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.TextView\").instance(0)")
@@ -823,6 +832,61 @@ public void b3ToP(String b3number) throws InterruptedException {
             Allure.addAttachment("Transaction successful!", new ByteArrayInputStream(screenshot2));
             tap(150,2070);
 }
+public void b3ToPnb(String b3number) throws InterruptedException {
+	Thread.sleep(7000);
+	menu.click();
+   tap(300,690);
+   
+   wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(searchOutline)));
+	search.sendKeys(b3number);
+	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(searchbutton)));
+	searchbutton.click();
+	Thread.sleep(4000);
+	tap(500,900);
+	//image.click();
+	
+   wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(hdpe)));
+	hdpe.click();
+	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(requiredQuantity)));
+	requiredQuantity.click();
+	tap(153,1661);
+//	pbDriver.pressKey(new KeyEvent(AndroidKey.DIGIT_1));
+	pbDriver.pressKey(new KeyEvent(AndroidKey.BACK));
+	Thread.sleep(2000);
+	scroll(500,1650,500,1300); //scroll up to display add to cart
+	tap(545,1984);  //tap add to cart
+	  tap(500,700);      //tap pet panel
+     Thread.sleep(1000);
+   wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(requiredQuantity)));
+   requiredQuantity.click();
+   tap(153,1661);
+//   pbDriver.pressKey(new KeyEvent(AndroidKey.DIGIT_1));
+	pbDriver.pressKey(new KeyEvent(AndroidKey.BACK));
+	Thread.sleep(2000);
+	scroll(500,1650,500,1300); //scroll up to display add to cart
+	tap(545,1984);  //tap add to cart
+	tap(545,2005);
+   takepic.click();
+   wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(addPicture)));
+   addPicture.click();
+  
+  
+       	Thread.sleep(10000);
+           tap(545,1977);
+        	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(photoDone)));
+        	photoDone.click();
+        	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(savereceipt)));
+        	savereceipt.click();
+        	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(confirmpurchase)));
+        	takescreenshotofandroid("confirm purchase scrsht");
+       	confirmpurchase.click();
+       	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(transactionsuccessful)));
+       	transactionsuccessful.isDisplayed();
+        	 TakesScreenshot ts2 = (TakesScreenshot) pbDriver;
+            byte[] screenshot2 = ts2.getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment("Transaction successful!", new ByteArrayInputStream(screenshot2));
+            tap(150,2070);
+}
 public void sell_hdpe_branch_To_Processor_with_receipt(String processorname) throws InterruptedException {
 	findabuyer.click();
    
@@ -1301,188 +1365,86 @@ public void tap(int x, int y) throws InterruptedException {
     }
     
     public void verifyMemberBonusPresent() throws InterruptedException {
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.invisibilityOf(loading)));
-    	lock_bonus.isDisplayed();
-    	delayed_bonus.isDisplayed();
-    	pb_logo_bonus.isDisplayed();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(memberbonustext, "133")));
-    	assertTrue(memberbonustext.getText().equals("133"));
-    	Thread.sleep(2000);
-    	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
-    	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
-    		Thread.sleep(2000);
-    	
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
-    	menu.click();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(logout)));
-    	logout.click();
+      delayed_bonusm1.isDisplayed();
+      takescreenshotofandroid("User is able to see pending delayed bonus");
+      menu.click();
+  	tap(300,1415);
     }
 
     public void verifyBranch1BonusPresent() throws InterruptedException {
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(searchOutline)));
-    	PointerInput fingerShutter = new PointerInput(PointerInput.Kind.TOUCH, "fingerShutter");
-        Sequence scrollShutter = new Sequence(fingerShutter, 1);
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(0),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerDown(0));
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(100),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerUp(0));
-        pbDriver.perform(Arrays.asList(scrollShutter));
+    	tap(150,2070);
+    	delayed_bonusb1.isDisplayed();
+    	 takescreenshotofandroid("User is able to see pending delayed bonus");
+    menu.click();
+    	tap(300,1415);
     	
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.invisibilityOf(loading)));
-    	lock_bonus.isDisplayed();
-    	unlock_bonus.isDisplayed();
-    	pb_logo_bonus.isDisplayed();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(bonustextbranch, "30")));
-    	assertTrue(bonustextbranch.getText().equals("30"));
-    	Thread.sleep(2000);
-    	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
-    	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
-    		Thread.sleep(2000);
     	
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
-    	menu.click();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(logout)));
-    	logout.click();
     }
 
     public void verifyBranch2BonusPresent() throws InterruptedException {
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(searchOutline)));
-    	PointerInput fingerShutter = new PointerInput(PointerInput.Kind.TOUCH, "fingerShutter");
-        Sequence scrollShutter = new Sequence(fingerShutter, 1);
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(0),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerDown(0));
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(100),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerUp(0));
-        pbDriver.perform(Arrays.asList(scrollShutter));
-    	
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.invisibilityOf(loading)));
-    	lock_bonus.isDisplayed();
-    	unlock_bonus.isDisplayed();
-    	pb_logo_bonus.isDisplayed();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(bonustextbranch, "14")));
-    	assertTrue(bonustextbranch.getText().equals("14"));
-    	Thread.sleep(2000);
-    	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
-    	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
-    		Thread.sleep(2000);
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
+    	tap(150,2070);
+    	delayed_bonusb2.isDisplayed();
+    	 takescreenshotofandroid("User is able to see pending delayed bonus");
     	menu.click();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(logout)));
-    	logout.click();
+    	tap(300,1415);
+    	
     }
 
     public void verifyMemberBonusNotPresent() throws InterruptedException {
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.invisibilityOf(loading)));
+    	
     	try {
-    		lock_bonus.isDisplayed();
+    		delayed_bonusm1.isDisplayed();
     	}catch(Exception e) {
     		
     	}
-    	try {
-    		delayed_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
-    	try {
-    		pb_logo_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
+    
     	Thread.sleep(2000);
     	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
     	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
+    	    Allure.addAttachment("Delayed bonus removed", new ByteArrayInputStream(screenshot1));
     		Thread.sleep(2000);
     	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
     	menu.click();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(logout)));
-    	logout.click();
+    	tap(300,1415);
+    	
     }
 
     public void verifyBranch1BonusNotPresent() throws InterruptedException {
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(searchOutline)));
-    	PointerInput fingerShutter = new PointerInput(PointerInput.Kind.TOUCH, "fingerShutter");
-        Sequence scrollShutter = new Sequence(fingerShutter, 1);
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(0),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerDown(0));
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(100),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerUp(0));
-        pbDriver.perform(Arrays.asList(scrollShutter));
-    	
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.invisibilityOf(loading)));
-    	try {
-    		lock_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
+    	tap(150,2070);
     	try {
     		delayed_bonus.isDisplayed();
     	}catch(Exception e) {
     		
     	}
-    	try {
-    		pb_logo_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
+    	
     	Thread.sleep(2000);
     	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
     	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
+    	    Allure.addAttachment("Delayed bonus removed", new ByteArrayInputStream(screenshot1));
     		Thread.sleep(2000);
     	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
     	menu.click();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(logout)));
-    	logout.click();
+    	tap(300,1415);
+    	
     }
 
     public void verifyBranch2BonusNotPresent() throws InterruptedException {
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(searchOutline)));
-    	PointerInput fingerShutter = new PointerInput(PointerInput.Kind.TOUCH, "fingerShutter");
-        Sequence scrollShutter = new Sequence(fingerShutter, 1);
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(0),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerDown(0));
-        scrollShutter.addAction(fingerShutter.createPointerMove(Duration.ofMillis(100),
-            PointerInput.Origin.viewport(), 400, 2060));
-        scrollShutter.addAction(fingerShutter.createPointerUp(0));
-        pbDriver.perform(Arrays.asList(scrollShutter));
+    	tap(150,2070);
+    	try {
+    		delayed_bonusb2.isDisplayed();
+    	}catch(Exception e) {
+    		
+    	}
     	
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.invisibilityOf(loading)));
-    	try {
-    		lock_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
-    	try {
-    		delayed_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
-    	try {
-    		pb_logo_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
     	Thread.sleep(2000);
     	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
     	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
+    	    Allure.addAttachment("Delayed bonus removed", new ByteArrayInputStream(screenshot1));
     		Thread.sleep(2000);
     	
     	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
     	menu.click();
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(logout)));
-    	logout.click();
+    	tap(300,1415);
     }
     public void verifyBonusInAppMem_1711_BeforeBonusPaid() throws InterruptedException {
     	
@@ -1564,5 +1526,18 @@ public void tap(int x, int y) throws InterruptedException {
 
 	public void verifyBonusInAppB2_1711_AfterBonusPaid() throws InterruptedException {
 	}
+	
+	public void checknobonusinhistory() throws InterruptedException {
+		tap(150,2070);
+		tap(660,2070);
+		nobonusinhistory.isDisplayed();
+		takescreenshotofandroid("no bonus generated");
+		menu.click();
+		tap(300,1415);
+		
+	}
+	
+	
+	
 }
 

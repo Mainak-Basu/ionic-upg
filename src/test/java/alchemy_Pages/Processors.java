@@ -98,6 +98,8 @@ import io.qameta.allure.Allure;
     List<WebElement> cardheaders;
     @FindBy(xpath="//label[contains(text(),'Bonus')]/following-sibling::div/div")
     public WebElement bonus;
+    @FindBy(xpath = "//label[contains(text(),'ASSOCIATED BONUS')]/following::label[contains(text(),'System offset')]/following::div[text()='0']")
+    WebElement zerobonussysoffset;
 
     
     
@@ -234,6 +236,26 @@ public void clickExchangeHistoryButton() {
 			 bonus.getText().equals("133");
 		 }
 		 takescreenshotof(bonus,"screenshot of processor transaction details");
+		 e.click();
+	 }
+   	 
+	}
+
+	public void checkprocessorexchangehistorysysoff(String phone) throws InterruptedException {
+		processors_TAB.click();
+   	 wait300.until(ExpectedConditions.visibilityOf(perpage));
+   	 phoneSearchBox.clear();
+   	 phoneSearchBox.sendKeys(phone);
+   	 wait300.until(ExpectedConditions.visibilityOf(pageLoader));
+   	 wait300.until(ExpectedConditions.visibilityOf(perpage));
+   	 wait300.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(searchresult)));
+   	 firstcell.click();
+   	 exchangeHistory.click();
+   	for(WebElement e: cardheaders) {
+   		
+		 e.click();
+		 zerobonussysoffset.click();
+		 takescreenshotof(zerobonussysoffset,"User is able to see system offset under associated bonus.");
 		 e.click();
 	 }
    	 

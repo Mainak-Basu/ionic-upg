@@ -284,6 +284,8 @@ public WebElement bonusinpanel;
 public WebElement firstcell;
 @FindBy(xpath = "//label[text()='ASSOCIATED BONUS']/following::label/following::label/following-sibling::div/div[contains(@class,'text')]")
 WebElement bonustext;
+@FindBy(xpath = "//label[contains(text(),'ASSOCIATED BONUS')]/following::label[contains(text(),'System offset')]/following::div[text()='0']")
+WebElement zerobonussysoffset;
 
 @FindBy(xpath="//option[text()=' (+63) Philippines ']")
 public static WebElement philippinesbr;
@@ -684,6 +686,19 @@ public void editBranchNameDetails(String pNum) throws InterruptedException {
     Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
     Thread.sleep(2000);
 	saveUserDetails();
+}
+
+public void verifysystemoffsetbonus(String pNum) throws InterruptedException {  //-------------------------------------------------------------
+	clickBranchesTab();
+	Thread.sleep(5000);
+	searchSpecificBranch(pNum);
+	clickSpecificBranch();
+	exchangeHistoryTab.click();
+	transactions.get(0).click();
+	zerobonussysoffset.isDisplayed();
+	takescreenshotof(zerobonussysoffset,"Branch exchange history shows system offset bonus under associated bonus");
+	transactions.get(0).click();
+	
 }
 
 public void verifyBonusInAlchmeyBranches_1711(String branchId,String bonus) throws InterruptedException {
@@ -1197,64 +1212,71 @@ public void verifykgrecycled() throws InterruptedException {
 
 public void verifyDelayedBonus() throws InterruptedException {
 	exchangeHistoryTab.click();
-	
-	cardheaders.get(0).click();
-	wait.until(ExpectedConditions.textToBePresentInElement(branchbonustext.get(0), "30"));
-	assertTrue(branchbonustext.get(0).getText().equals("30"));
-	Thread.sleep(2000);
+	for(WebElement e1: cardheaders) {
+		e1.click();
+		try {
+			wait.until(ExpectedConditions.textToBePresentInElement(branchbonustext.get(0), "30"));
+			assertTrue(branchbonustext.get(0).getText().equals("30"));
+			Thread.sleep(2000);
 
-	 TakesScreenshot ts13 = (TakesScreenshot) alcDriver;
-	    byte[] screenshot13 = ts13.getScreenshotAs(OutputType.BYTES);
-	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot13));
-		Thread.sleep(2000);
+			 TakesScreenshot ts13 = (TakesScreenshot) alcDriver;
+			    byte[] screenshot13 = ts13.getScreenshotAs(OutputType.BYTES);
+			    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot13));
+				Thread.sleep(2000);
 
-	System.out.println("pass 1");
-	
-	cardheaders.get(1).click();
-	wait.until(ExpectedConditions.textToBePresentInElement(memberbonustext, "133"));
-	assertTrue(memberbonustext.getText().equals("133"));
-	Actions action = new Actions(alcDriver);
-	action.moveToElement(lastItemOnPage).build().perform();
-	Thread.sleep(2000);
+			System.out.println("pass 1");
+		}catch(Exception ex2) {
+			wait.until(ExpectedConditions.textToBePresentInElement(memberbonustext, "133"));
+			assertTrue(memberbonustext.getText().equals("133"));
+			Actions action = new Actions(alcDriver);
+			action.moveToElement(lastItemOnPage).build().perform();
+			Thread.sleep(2000);
 
-	 TakesScreenshot ts1 = (TakesScreenshot) alcDriver;
-	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
-		Thread.sleep(2000);
+			 TakesScreenshot ts1 = (TakesScreenshot) alcDriver;
+			    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
+			    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot1));
+				Thread.sleep(2000);
+				cardheaders.get(0).click();
 
-	System.out.println("pass 2");
-	
+			System.out.println("pass 2");
+		}
+		
+		
+		e1.click();
+	}
 	alcDriver.get("https://"+BaseClass.temp+"/#/admin/collectionpoint/"+Data.b2id4360);
 	alcDriver.navigate().refresh();
 	
 	exchangeHistoryTab.click();
 	
-	cardheaders.get(0).click();
-	wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(branchbonustext.get(0), "14")));
-	assertTrue(branchbonustext.get(0).getText().equals("14"));
-	Thread.sleep(2000);
+	for(WebElement e: cardheaders ) {
+		e.click();
+		try {
+			wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(branchbonustext.get(0), "14")));
+			assertTrue(branchbonustext.get(0).getText().equals("14"));
+			 TakesScreenshot ts112 = (TakesScreenshot) alcDriver;
+			    byte[] screenshot112 = ts112.getScreenshotAs(OutputType.BYTES);
+			    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot112));
+				Thread.sleep(2000);
+			System.out.println("pass 3");
+		}catch(Exception ex) {
+			wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(branchbonustext.get(1), "30")));
+			Thread.sleep(2000);
+			assertTrue(branchbonustext.get(1).getText().equals("30"));
+			Thread.sleep(2000);
+			Actions action = new Actions(alcDriver);
+			action.moveToElement(lastItemOnPage).build().perform();
+			Thread.sleep(2000);
 
-	 TakesScreenshot ts112 = (TakesScreenshot) alcDriver;
-	    byte[] screenshot112 = ts112.getScreenshotAs(OutputType.BYTES);
-	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot112));
-		Thread.sleep(2000);
-	System.out.println("pass 3");
-	
-	cardheaders.get(1).click();
-	Thread.sleep(2000);
-	wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(branchbonustext.get(1), "30")));
-	Thread.sleep(2000);
-	assertTrue(branchbonustext.get(1).getText().equals("30"));
-	Thread.sleep(2000);
-	action.moveToElement(lastItemOnPage).build().perform();
-	Thread.sleep(2000);
+			 TakesScreenshot ts11 = (TakesScreenshot) alcDriver;
+			    byte[] screenshot11 = ts11.getScreenshotAs(OutputType.BYTES);
+			    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot11));
+				Thread.sleep(2000);
 
-	 TakesScreenshot ts11 = (TakesScreenshot) alcDriver;
-	    byte[] screenshot11 = ts11.getScreenshotAs(OutputType.BYTES);
-	    Allure.addAttachment("Screenshot1", new ByteArrayInputStream(screenshot11));
-		Thread.sleep(2000);
-
-	System.out.println("pass 4");
+			System.out.println("pass 4");
+		}
+		e.click();
+	}
 }
 
 @SuppressWarnings("deprecation")

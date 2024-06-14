@@ -974,7 +974,7 @@ public class Data extends BaseClass{
 	
 	
 	
-	public void runNewman_1Branch1member1processor() throws IOException {
+	public void runNewman_1Branch() throws IOException {
 		try {
 			// Start the command prompt window
 			ProcessBuilder builder = new ProcessBuilder("cmd.exe");

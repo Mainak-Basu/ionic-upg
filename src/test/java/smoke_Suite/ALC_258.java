@@ -18,7 +18,7 @@ public class ALC_258 extends BaseClass{
 @Description("Create a member, branch, processor and a bonus with the same branch and processor")
 public void createdata() throws IOException {
 	Data d = new Data();
-	d.runNewman_1Branch1member1processor();
+	d.runNewman_1Branch();
 }
 @Test(priority=1, description="Go the branch and take note of branch details:- 1) KG recycled, 2) Active members, 3) Members Registered and 4) Tokens in wallet.")
 @Description("Go the branch and take note of branch details:- 1) KG recycled, 2) Active members, 3) Members Registered and 4) Tokens in wallet.")

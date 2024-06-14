@@ -1,39 +1,39 @@
 {
-  "id": "7d065fc1-d26a-4983-b1bb-3e3967e934fe",
+  "id": "957e1ff6-cb36-401e-a531-a0b7d04fa832",
   "values": [
     {
       "type": "any",
-      "value": "FleekIXt2kY",
+      "value": "FleekrD8ars",
       "key": "m1randomUsername"
     },
     {
       "type": "any",
-      "value": "+639867693729",
+      "value": "+632564660265",
       "key": "m1randomNumber"
     },
     {
       "type": "any",
-      "value": "D83E3CDC-4F1A-65B8-A9E6-081A5C281714",
+      "value": "81A6A1B5-3374-0CC6-A8B9-68B500641B0A",
       "key": "m1deviceID"
     },
     {
       "type": "any",
-      "value": "b69ee013-37ba-4427-b11d-ca6a076cbda7",
+      "value": "6cfbb358-0e75-4aa9-b9cb-606354131a66",
       "key": "m1id"
     },
     {
       "type": "any",
-      "value": "b69ee013-37ba-4427-b11d-ca6a076cbda7",
+      "value": "6cfbb358-0e75-4aa9-b9cb-606354131a66",
       "key": "m1entityId"
     },
     {
       "type": "any",
-      "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDk3OTEwMTMsInN1YiI6ImI2OWVlMDEzLTM3YmEtNDQyNy1iMTFkLWNhNmEwNzZjYmRhNyJ9.f_zMsa9JmQbmEGI-w4CczxwOnjnSzreg-9pn_25wmFDtq_VumL1ikuRSAfefDBxN-_wXhxo_Re7-6RiP4CvVFQ",
+      "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDk4NDc1MTAsInN1YiI6IjZjZmJiMzU4LTBlNzUtNGFhOS1iOWNiLTYwNjM1NDEzMWE2NiJ9.32f3pbFU5VK_qgcZuUSri-E9YlxRCwk3xOSsbuwlshCG73yozbTyJ5KoaLkJtyUDf96alsfqlJ3cfTJA_ITnXw",
       "key": "m1accessToken"
     }
   ],
   "name": "environment",
   "_postman_variable_scope": "environment",
-  "_postman_exported_at": "2024-06-13T15:03:33.168Z",
+  "_postman_exported_at": "2024-06-14T06:45:10.359Z",
   "_postman_exported_using": "Newman/5.3.2"
 }
