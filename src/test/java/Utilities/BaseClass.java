@@ -166,7 +166,7 @@ public static boolean gojekyn;
 			  DesiredCapabilities caps = new DesiredCapabilities();
 			  caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
 			  caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-			  caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
+			  caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.0");
 			 caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
 			  //caps.setCapability("udid", udid);
 			  caps.setCapability("newCommandTimeout", 9000);

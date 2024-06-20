@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
@@ -130,12 +133,10 @@ public static String getRandomBranch3Name() {
         
         return result.toString();
     }
- // Get the current date and time
-    Date now = new Date();
-    
-    // Format the date and time as "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-    String formattedDateTime = dateFormat.format(now);
+    Instant now = Instant.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("uuuu-MM-dd'T'HH:mm:ss.SSSX").withZone(ZoneOffset.UTC);
+    String formattedDateTime = formatter.format(now);
+
 
 public void sendPostRequest() throws IOException {
 RestAssured.baseURI = "https://qapb.cognitionfoundry.io"; // Your API endpoint

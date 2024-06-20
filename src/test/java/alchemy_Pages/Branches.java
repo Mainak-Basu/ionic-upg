@@ -1241,6 +1241,7 @@ public void verifyDelayedBonus() throws InterruptedException {
 		
 		
 		e1.click();
+		Thread.sleep(2000);
 	}
 	alcDriver.get("https://"+BaseClass.temp+"/#/admin/collectionpoint/"+Data.b2id4360);
 	alcDriver.navigate().refresh();
@@ -1258,9 +1259,9 @@ public void verifyDelayedBonus() throws InterruptedException {
 				Thread.sleep(2000);
 			System.out.println("pass 3");
 		}catch(Exception ex) {
-			wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(branchbonustext.get(1), "30")));
+			wait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(branchbonustext.get(0), "30")));
 			Thread.sleep(2000);
-			assertTrue(branchbonustext.get(1).getText().equals("30"));
+			assertTrue(branchbonustext.get(0).getText().equals("30"));
 			Thread.sleep(2000);
 			Actions action = new Actions(alcDriver);
 			action.moveToElement(lastItemOnPage).build().perform();
@@ -1274,6 +1275,7 @@ public void verifyDelayedBonus() throws InterruptedException {
 			System.out.println("pass 4");
 		}
 		e.click();
+		Thread.sleep(2000);
 	}
 }
 

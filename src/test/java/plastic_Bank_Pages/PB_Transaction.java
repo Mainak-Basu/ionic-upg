@@ -58,13 +58,13 @@ public WebElement transaction;
 public WebElement donationionic;
 @AndroidFindBy(uiAutomator="new UiSelector().textContains(\"PET\")")
 public WebElement pet;
-@AndroidFindBy(uiAutomator="new UiSelector().text(\"0 (0)\")")
+@AndroidFindBy(uiAutomator="new UiSelector().text(\"No bonus\")")
 public WebElement noBonus;
 @AndroidFindBy(uiAutomator="new UiSelector().textContains(\"HDPE\")")
 public WebElement hdpe;
 @AndroidFindBy(uiAutomator="new UiSelector().text(\"Search name or phone number\")")
 public WebElement searchOutline;
-@AndroidFindBy(uiAutomator="new UiSelector().text(\"+0 (pending)\")")
+@AndroidFindBy(uiAutomator="new UiSelector().text(\"No bonus\")")
 public List<WebElement> nobonus;
 @AndroidFindBy(uiAutomator="new UiSelector().className(\"android.widget.Button\").instance(3)")
 public WebElement searchbutton;
@@ -193,6 +193,7 @@ public WebElement branchToken_new;
     public WebElement unlock_bonus;
     @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"+133 (pending)\")")
     public WebElement delayed_bonus;
+ 
     @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"+133 (pending)\")")
     public WebElement delayed_bonusm1;
     @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"+30 (pending)\")")
@@ -1368,7 +1369,7 @@ public void tap(int x, int y) throws InterruptedException {
       delayed_bonusm1.isDisplayed();
       takescreenshotofandroid("User is able to see pending delayed bonus");
       menu.click();
-  	tap(300,1415);
+  	logout.click();
     }
 
     public void verifyBranch1BonusPresent() throws InterruptedException {
@@ -1376,7 +1377,7 @@ public void tap(int x, int y) throws InterruptedException {
     	delayed_bonusb1.isDisplayed();
     	 takescreenshotofandroid("User is able to see pending delayed bonus");
     menu.click();
-    	tap(300,1415);
+    	logout.click();
     	
     	
     }
@@ -1386,65 +1387,34 @@ public void tap(int x, int y) throws InterruptedException {
     	delayed_bonusb2.isDisplayed();
     	 takescreenshotofandroid("User is able to see pending delayed bonus");
     	menu.click();
-    	tap(300,1415);
+    	logout.click();
     	
     }
 
     public void verifyMemberBonusNotPresent() throws InterruptedException {
     	
-    	try {
-    		delayed_bonusm1.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
-    
-    	Thread.sleep(2000);
-    	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
-    	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Delayed bonus removed", new ByteArrayInputStream(screenshot1));
-    		Thread.sleep(2000);
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
+    	noBonus.isDisplayed();
+    	takescreenshotofandroid("delayed bonus not visible");
     	menu.click();
-    	tap(300,1415);
+    	logout.click();
     	
     }
 
     public void verifyBranch1BonusNotPresent() throws InterruptedException {
     	tap(150,2070);
-    	try {
-    		delayed_bonus.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
-    	
-    	Thread.sleep(2000);
-    	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
-    	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Delayed bonus removed", new ByteArrayInputStream(screenshot1));
-    		Thread.sleep(2000);
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
+    	noBonus.isDisplayed();
+    	takescreenshotofandroid("delayed bonus not visible");
     	menu.click();
-    	tap(300,1415);
+    	logout.click();
     	
     }
 
     public void verifyBranch2BonusNotPresent() throws InterruptedException {
     	tap(150,2070);
-    	try {
-    		delayed_bonusb2.isDisplayed();
-    	}catch(Exception e) {
-    		
-    	}
-    	
-    	Thread.sleep(2000);
-    	 TakesScreenshot ts1 = (TakesScreenshot) pbDriver;
-    	    byte[] screenshot1 = ts1.getScreenshotAs(OutputType.BYTES);
-    	    Allure.addAttachment("Delayed bonus removed", new ByteArrayInputStream(screenshot1));
-    		Thread.sleep(2000);
-    	
-    	wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(menu)));
+    	noBonus.isDisplayed();
+    	takescreenshotofandroid("delayed bonus not visible");
     	menu.click();
-    	tap(300,1415);
+    	logout.click();
     }
     public void verifyBonusInAppMem_1711_BeforeBonusPaid() throws InterruptedException {
     	

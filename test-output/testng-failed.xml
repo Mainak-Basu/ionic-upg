@@ -14,17 +14,11 @@
           <include name="generateRandomBranchMemberNumber"/>
           <include name="generateRandomNumber"/>
           <include name="generateBonusName"/>
-          <include name="verifyBuySellRemovedBonusInBonusOrderSummary"/>
-          <include name="disablebonusAndVerifyExchangeHistory"/>
           <include name="generateAndroidBenefitname"/>
-          <include name="verifyDelayedBonusInApp"/>
-          <include name="verifyKgRecycledAndDelayedBonus"/>
           <include name="teardownapp"/>
           <include name="generateBenefitName"/>
           <include name="setup"/>
-          <include name="makeTransaction"/>
           <include name="generateBranchMemberName"/>
-          <include name="verifyBuySellTransactionInBonusOrder"/>
         </methods>
       </class> <!-- smoke_Suite.ALC_4360 -->
     </classes>
